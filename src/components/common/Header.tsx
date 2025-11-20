@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -14,12 +14,34 @@ import { ThemeToggle } from './ThemeToggle';
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
+  const [activeLink, setActiveLink] = useState(pathname);
+
+  useEffect(() => {
+    const handleHashChange = () => {
+        const hash = window.location.hash;
+        if (pathname === '/' && hash) {
+            setActiveLink(`/${hash}`);
+        } else {
+            setActiveLink(pathname);
+        }
+    };
+    
+    handleHashChange();
+    window.addEventListener('hashchange', handleHashChange);
+    
+    return () => {
+        window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, [pathname]);
 
   const isLinkActive = (href: string) => {
-    if (href === '/') return pathname === href;
+    if (href === '/') return activeLink === href && !pathname.startsWith('/services') && !pathname.startsWith('/about') && !pathname.startsWith('/vision') && !pathname.startsWith('/blog');
+    
     if (href.startsWith('/#')) {
-      return pathname === '/';
+      const anchor = href.substring(1); // e.g. /#contact -> #contact
+      return activeLink === anchor;
     }
+    
     return pathname.startsWith(href);
   }
 

@@ -18,7 +18,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="space-y-12">
+          <div className="space-y-12 max-w-4xl mx-auto">
             <Card className="shadow-lg">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold">Company Overview</CardTitle>
