@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Kafas Build',
+  title: 'Kafas Group',
   description: 'Expert construction, furniture, and car services.',
 };
 

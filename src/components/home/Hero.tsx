@@ -24,7 +24,7 @@ export function Hero() {
           Building Your Vision, Crafting Your Dreams
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-200 max-w-2xl mx-auto">
-          From large-scale constructions to bespoke furniture pieces, Kafas Build delivers excellence and quality craftsmanship in every project.
+          From large-scale constructions to bespoke furniture pieces, Kafas Group delivers excellence and quality craftsmanship in every project.
         </p>
         <div className="mt-10">
           <Button asChild size="lg" variant="destructive">

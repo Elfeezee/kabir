@@ -20,7 +20,7 @@ export default function BlogPage() {
               From the Blog
             </h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground">
-              Insights, tips, and stories from the Kafas Build team. Your source for industry trends and expert advice.
+              Insights, tips, and stories from the Kafas Group team. Your source for industry trends and expert advice.
             </p>
           </div>
 
