@@ -1,12 +1,12 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState, useEffect, useRef } from 'react';
+import { useFormStatus } from 'react-dom';
 import { handleGenerateConcept, type DesignConceptState } from '@/app/actions';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { useEffect, useRef } from 'react';
 import { Bot, Loader2 } from 'lucide-react';
 
 const initialState: DesignConceptState = {};
@@ -22,7 +22,7 @@ function SubmitButton() {
 }
 
 export function DesignAssistant() {
-  const [state, formAction] = useFormState(handleGenerateConcept, initialState);
+  const [state, formAction] = useActionState(handleGenerateConcept, initialState);
   const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
