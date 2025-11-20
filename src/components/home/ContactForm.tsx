@@ -56,12 +56,12 @@ export function ContactForm() {
             <form ref={formRef} action={formAction} className="space-y-6">
               <div className="space-y-2">
                 <Label htmlFor="name">Full Name</Label>
-                <Input id="name" name="name" placeholder="John Doe" required />
+                <Input id="name" name="name" placeholder="" required />
                 {state.errors?.name && <p className="text-sm text-destructive">{state.errors.name[0]}</p>}
               </div>
               <div className="space-y-2">
                 <Label htmlFor="email">Email Address</Label>
-                <Input id="email" name="email" type="email" placeholder="john@example.com" required />
+                <Input id="email" name="email" type="email" placeholder="" required />
                 {state.errors?.email && <p className="text-sm text-destructive">{state.errors.email[0]}</p>}
               </div>
               <div className="space-y-2">
