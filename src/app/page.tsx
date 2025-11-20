@@ -5,6 +5,7 @@ import { ProjectShowcase } from '@/components/home/ProjectShowcase';
 import { ServiceCatalog } from '@/components/home/ServiceCatalog';
 import { DesignAssistant } from '@/components/home/DesignAssistant';
 import { ContactForm } from '@/components/home/ContactForm';
+import { Partners } from '@/components/home/Partners';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero />
         <ProjectShowcase />
         <ServiceCatalog />
+        <Partners />
         <DesignAssistant />
         <ContactForm />
       </main>
