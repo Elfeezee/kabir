@@ -1,19 +1,8 @@
 'use client';
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from '@/components/ui/carousel';
 import { KafasLogo } from '@/components/common/KafasLogo';
-import Autoplay from "embla-carousel-autoplay";
-import React from 'react';
 
 export function Partners() {
-  const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
-  );
-
   return (
     <section id="partners" className="py-16 sm:py-24">
       <div className="container">
@@ -25,26 +14,13 @@ export function Partners() {
             We partner with the best in the industry to deliver exceptional results for our clients.
           </p>
         </div>
-        <Carousel
-          opts={{
-            align: 'start',
-            loop: true,
-          }}
-          plugins={[plugin.current]}
-          className="w-full"
-        >
-          <CarouselContent>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
             {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/5">
-                <div className="p-4">
-                   <div className="flex aspect-video items-center justify-center p-6 bg-secondary rounded-lg">
-                      <KafasLogo className="h-12 text-muted-foreground" />
-                   </div>
-                </div>
-              </CarouselItem>
+              <div key={index} className="flex justify-center p-6 bg-secondary rounded-lg">
+                  <KafasLogo className="h-12 text-muted-foreground" />
+              </div>
             ))}
-          </CarouselContent>
-        </Carousel>
+          </div>
       </div>
     </section>
   );
