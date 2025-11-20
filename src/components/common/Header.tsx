@@ -9,6 +9,7 @@ import { navLinks } from '@/lib/data';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { KafasLogo } from '@/components/common/KafasLogo';
+import { ThemeToggle } from './ThemeToggle';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,37 +44,40 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="md:hidden">
-          <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Open menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right">
-              <div className="flex flex-col gap-6 p-6">
-                <Link href="/" className="flex items-center gap-2 font-bold" onClick={() => setIsMenuOpen(false)}>
-                  <KafasLogo className="h-8" />
-                </Link>
-                <nav className="flex flex-col gap-4">
-                  {navLinks.map((link) => (
-                    <Link
-                      key={link.name}
-                      href={link.href}
-                      onClick={() => setIsMenuOpen(false)}
-                      className={cn(
-                        'text-lg font-medium transition-colors hover:text-foreground',
-                        isLinkActive(link.href) ? 'text-foreground' : 'text-foreground/80'
-                      )}
-                    >
-                      {link.name}
+        <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <div className="md:hidden">
+            <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+                <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                    <Menu className="h-6 w-6" />
+                    <span className="sr-only">Open menu</span>
+                </Button>
+                </SheetTrigger>
+                <SheetContent side="right">
+                <div className="flex flex-col gap-6 p-6">
+                    <Link href="/" className="flex items-center gap-2 font-bold" onClick={() => setIsMenuOpen(false)}>
+                    <KafasLogo className="h-8" />
                     </Link>
-                  ))}
-                </nav>
-              </div>
-            </SheetContent>
-          </Sheet>
+                    <nav className="flex flex-col gap-4">
+                    {navLinks.map((link) => (
+                        <Link
+                        key={link.name}
+                        href={link.href}
+                        onClick={() => setIsMenuOpen(false)}
+                        className={cn(
+                            'text-lg font-medium transition-colors hover:text-foreground',
+                            isLinkActive(link.href) ? 'text-foreground' : 'text-foreground/80'
+                        )}
+                        >
+                        {link.name}
+                        </Link>
+                    ))}
+                    </nav>
+                </div>
+                </SheetContent>
+            </Sheet>
+            </div>
         </div>
       </div>
     </header>
