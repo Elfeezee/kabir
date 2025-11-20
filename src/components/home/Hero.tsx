@@ -17,20 +17,20 @@ export function Hero() {
   return (
     <section className="relative h-[70vh] min-h-[500px] w-full">
       <Carousel
+        plugins={[plugin.current]}
+        className="w-full h-full"
         opts={{
           loop: true,
         }}
-        plugins={[plugin.current]}
-        className="w-full h-full"
       >
-        <CarouselContent className="h-full -ml-0">
+        <CarouselContent className="-ml-0 h-full">
           {heroImages.map((heroImage, index) => (
-            <CarouselItem key={heroImage.id} className="h-full relative pl-0">
+            <CarouselItem key={heroImage.id} className="relative pl-0 h-full">
               <Image
                 src={heroImage.imageUrl}
                 alt={heroImage.description}
                 fill
-                className="object-cover"
+                className="object-cover w-full h-full"
                 priority={index === 0}
                 data-ai-hint={heroImage.imageHint}
               />
