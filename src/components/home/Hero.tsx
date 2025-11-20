@@ -23,9 +23,9 @@ export function Hero() {
         plugins={[plugin.current]}
         className="w-full h-full"
       >
-        <CarouselContent className="h-full">
+        <CarouselContent className="h-full -ml-0">
           {heroImages.map((heroImage, index) => (
-            <CarouselItem key={heroImage.id} className="h-full relative">
+            <CarouselItem key={heroImage.id} className="h-full relative pl-0">
               <Image
                 src={heroImage.imageUrl}
                 alt={heroImage.description}
