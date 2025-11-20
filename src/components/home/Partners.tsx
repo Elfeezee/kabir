@@ -7,8 +7,13 @@ import {
 } from '@/components/ui/carousel';
 import { KafasLogo } from '@/components/common/KafasLogo';
 import Autoplay from "embla-carousel-autoplay";
+import React from 'react';
 
 export function Partners() {
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  );
+
   return (
     <section id="partners" className="py-16 sm:py-24">
       <div className="container">
@@ -25,13 +30,7 @@ export function Partners() {
             align: 'start',
             loop: true,
           }}
-          plugins={[
-            Autoplay({
-              delay: 2000,
-              stopOnInteraction: false,
-              stopOnMouseEnter: true,
-            }),
-          ]}
+          plugins={[plugin.current]}
           className="w-full"
         >
           <CarouselContent>

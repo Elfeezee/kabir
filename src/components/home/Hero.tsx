@@ -11,8 +11,8 @@ import React from 'react';
 export function Hero() {
   const heroImages = PlaceHolderImages.filter(img => img.id.startsWith('hero-'));
   const plugin = React.useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: false })
-  )
+    Autoplay({ delay: 5000, stopOnInteraction: true })
+  );
 
   return (
     <section className="relative h-[60vh] min-h-[400px] w-full">
@@ -22,8 +22,6 @@ export function Hero() {
         }}
         plugins={[plugin.current]}
         className="w-full h-full"
-        onMouseEnter={plugin.current.stop}
-        onMouseLeave={plugin.current.reset}
       >
         <CarouselContent className="h-full">
           {heroImages.map((heroImage, index) => (
