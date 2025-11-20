@@ -25,7 +25,7 @@ export function Hero() {
       >
         <CarouselContent className="h-full">
           {heroImages.map((heroImage, index) => (
-            <CarouselItem key={heroImage.id} className="h-full">
+            <CarouselItem key={heroImage.id} className="h-full relative">
               <Image
                 src={heroImage.imageUrl}
                 alt={heroImage.description}
