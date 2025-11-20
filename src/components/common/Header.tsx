@@ -16,7 +16,8 @@ export function Header() {
   const pathname = usePathname();
 
   const isLinkActive = (href: string) => {
-    if (href.startsWith('#')) {
+    if (href === '/') return pathname === href;
+    if (href.startsWith('/#')) {
       return pathname === '/';
     }
     return pathname.startsWith(href);

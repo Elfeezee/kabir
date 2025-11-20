@@ -15,7 +15,7 @@ export function Hero() {
   );
 
   return (
-    <section className="relative h-[60vh] min-h-[400px] w-full">
+    <section className="relative h-[70vh] min-h-[500px] w-full">
       <Carousel
         opts={{
           loop: true,
@@ -38,19 +38,22 @@ export function Hero() {
           ))}
         </CarouselContent>
       </Carousel>
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/60" />
       <div className="absolute inset-0 flex items-center justify-center text-center text-white">
-        <div className="relative z-10 p-4 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-10 duration-500">
+        <div className="relative z-10 p-4 max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-10 duration-500">
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl font-headline">
-            Building Your Vision, Crafting Your Dreams
+              KAFAS: Engineering & Construction Excellence
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-200 max-w-2xl mx-auto">
-            From large-scale constructions to bespoke furniture pieces, Kafas Group delivers excellence and quality craftsmanship in every project.
+            <p className="mt-6 text-lg leading-8 text-gray-200 max-w-3xl mx-auto">
+              Delivering significant road, oil & gas, and structural projects across Nigeria with unparalleled expertise and quality. Your vision, engineered and built to last.
             </p>
-            <div className="mt-10">
-            <Button asChild size="lg" variant="destructive">
-                <Link href="#contact">Get a Quote</Link>
-            </Button>
+            <div className="mt-10 flex items-center justify-center gap-4">
+              <Button asChild size="lg" variant="destructive">
+                  <Link href="#contact">Get a Quote</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-black">
+                  <Link href="/about">Learn More</Link>
+              </Button>
             </div>
         </div>
       </div>

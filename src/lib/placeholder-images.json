@@ -3,44 +3,44 @@
     {
       "id": "hero-1",
       "description": "A modern and bright living room with stylish furniture.",
-      "imageUrl": "https://images.unsplash.com/photo-1724582586529-62622e50c0b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtb2Rlcm4lMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjM1MzMwNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "modern interior"
-    },
-    {
-      "id": "hero-2",
-      "description": "A construction worker looking at blueprints on a construction site.",
       "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb258ZW58MHx8fHwxNzYzNjQ4ODU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "construction site"
     },
     {
+      "id": "hero-2",
+      "description": "A construction worker looking at blueprints on a construction site.",
+      "imageUrl": "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZ3xlbnwwfHx8fDE3NjM3MjA0MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "engineering project"
+    },
+    {
       "id": "hero-3",
-      "description": "A mechanic working on a car engine.",
-      "imageUrl": "https://images.unsplash.com/photo-1553775282-20af807797d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXIlMjByZXBhaXJ8ZW58MHx8fHwxNzYzNjQ4ODg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "car repair"
+      "description": "Dredging operation in a large body of water.",
+      "imageUrl": "https://images.unsplash.com/photo-1629910398695-12c4533b3711?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkcmVkZ2luZ3xlbnwwfHx8fDE3NjM3MjA0ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dredging operation"
     },
     {
       "id": "project-1",
-      "description": "A custom-built wooden kitchen island with marble top.",
-      "imageUrl": "https://images.unsplash.com/photo-1714860534425-7ce04e013dec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxraXRjaGVuJTIwaXNsYW5kfGVufDB8fHx8MTc2MzYxMjgwMHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "kitchen island"
+      "description": "Asphalt paving machine laying down a new road.",
+      "imageUrl": "https://images.unsplash.com/photo-1541701574343-0860916a2707?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyb2FkJTIwY29uc3RydWN0aW9ufGVufDB8fHx8MTc2MzcyMDYwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "road construction"
     },
     {
       "id": "project-2",
-      "description": "A minimalist bedroom with a custom wardrobe and bed frame.",
-      "imageUrl": "https://images.unsplash.com/photo-1547561993-9fe9f2af3fd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtaW5pbWFsaXN0JTIwYmVkcm9vbXxlbnwwfHx8fDE3NjM1OTQyMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "minimalist bedroom"
+      "description": "A modern office building with a glass facade.",
+      "imageUrl": "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZ3xlbnwwfHx8fDE3NjM3MjA0MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern building"
     },
     {
       "id": "project-3",
-      "description": "Living room renovation with a feature wall and custom shelving.",
-      "imageUrl": "https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsaXZpbmclMjByb29tfGVufDB8fHx8MTc2MzU0MTUzNnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "living room"
+      "description": "Oil and gas pipeline stretching across a landscape.",
+      "imageUrl": "https://images.unsplash.com/photo-1623880539166-51c3600a7409?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvaWwlMjBwaXBlbGluZXxlbnwwfHx8fDE3NjM3MjA2ODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "oil pipeline"
     },
     {
       "id": "project-4",
-      "description": "Bespoke office furniture for a modern workspace.",
-      "imageUrl": "https://images.unsplash.com/photo-1579487785973-74d2ca7abdd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxvZmZpY2UlMjBmdXJuaXR1cmV8ZW58MHx8fHwxNzYzNTM3Mzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "office furniture"
+      "description": "Coastal erosion control measures with large rocks and barriers.",
+      "imageUrl": "https://images.unsplash.com/photo-1698291487339-65157288a8a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlcm9zaW9uJTIwY29udHJvbHxlbnwwfHx8fDE3NjM3MjA3NDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "erosion control"
     },
     {
       "id": "blog-1",
