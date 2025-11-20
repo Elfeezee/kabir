@@ -6,10 +6,19 @@ import { Hammer, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { navLinks } from '@/lib/data';
+import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isLinkActive = (href: string) => {
+    if (href.startsWith('#')) {
+      return pathname === '/';
+    }
+    return pathname.startsWith(href);
+  }
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -24,7 +33,10 @@ export function Header() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-foreground/60 transition-colors hover:text-foreground/80"
+              className={cn(
+                'transition-colors hover:text-foreground/80',
+                isLinkActive(link.href) ? 'text-foreground' : 'text-foreground/60'
+              )}
             >
               {link.name}
             </Link>
@@ -51,7 +63,10 @@ export function Header() {
                       key={link.name}
                       href={link.href}
                       onClick={() => setIsMenuOpen(false)}
-                      className="text-lg font-medium text-foreground/80 transition-colors hover:text-foreground"
+                      className={cn(
+                        'text-lg font-medium transition-colors hover:text-foreground',
+                        isLinkActive(link.href) ? 'text-foreground' : 'text-foreground/80'
+                      )}
                     >
                       {link.name}
                     </Link>

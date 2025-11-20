@@ -4,6 +4,7 @@ import { Armchair, Car, Hammer, Wrench } from "lucide-react";
 export const navLinks = [
   { name: 'Projects', href: '#projects' },
   { name: 'Services', href: '#services' },
+  { name: 'Blog', href: '/blog' },
   { name: 'Design AI', href: '#design-ai' },
   { name: 'Contact', href: '#contact' },
 ];
@@ -67,3 +68,33 @@ export const services: Service[] = [
 export const portfolioDescription = "Kafas Build specializes in high-quality, custom craftsmanship across construction, renovation, and bespoke furniture. Our portfolio showcases modern kitchen redesigns with custom cabinetry, minimalist bedroom suites with integrated wardrobes, elegant living room updates featuring bespoke media units, and ergonomic home office setups. We pride ourselves on creating spaces and pieces that are both functional and beautiful, tailored to each client's unique vision.";
 
 export const serviceCatalog = "Our services include: General Construction (new builds, extensions), Building & Renovation (kitchens, bathrooms, full-home makeovers), Custom Furniture (cabinets, tables, seating, storage solutions), and Car Services (maintenance, repairs, custom modifications). We use premium materials and work closely with clients from concept to completion.";
+
+export const blogPosts = [
+    {
+        id: 'blog-post-1',
+        title: '10 Things to Consider Before Your Next Home Renovation',
+        slug: '10-things-to-consider-before-your-next-home-renovation',
+        date: '2024-07-20',
+        author: 'John Doe',
+        excerpt: 'Thinking about renovating? Here are 10 crucial things to consider before you start knocking down walls. Proper planning can save you time, money, and a lot of headaches.',
+        imagePlaceholderId: 'blog-1'
+    },
+    {
+        id: 'blog-post-2',
+        title: 'The Rise of Sustainable Building Materials',
+        slug: 'the-rise-of-sustainable-building-materials',
+        date: '2024-07-15',
+        author: 'Jane Smith',
+        excerpt: 'Sustainability is more than just a buzzword. We explore the rise of eco-friendly building materials and how you can incorporate them into your next project.',
+        imagePlaceholderId: 'blog-2'
+    },
+    {
+        id: 'blog-post-3',
+        title: 'Custom Furniture vs. Store-Bought: What\'s the Right Choice for You?',
+        slug: 'custom-furniture-vs-store-bought',
+        date: '2024-07-10',
+        author: 'John Doe',
+        excerpt: 'Can\'t decide between a custom-made piece and something off the shelf? We break down the pros and cons to help you make an informed decision for your space.',
+        imagePlaceholderId: 'blog-3'
+    }
+];
