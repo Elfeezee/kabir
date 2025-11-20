@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A modern and bright living room with stylish furniture.",
+      "imageUrl": "https://images.unsplash.com/photo-1724582586529-62622e50c0b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtb2Rlcm4lMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjM1MzMwNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern interior"
+    },
+    {
+      "id": "project-1",
+      "description": "A custom-built wooden kitchen island with marble top.",
+      "imageUrl": "https://images.unsplash.com/photo-1714860534425-7ce04e013dec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxraXRjaGVuJTIwaXNsYW5kfGVufDB8fHx8MTc2MzYxMjgwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kitchen island"
+    },
+    {
+      "id": "project-2",
+      "description": "A minimalist bedroom with a custom wardrobe and bed frame.",
+      "imageUrl": "https://images.unsplash.com/photo-1547561993-9fe9f2af3fd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtaW5pbWFsaXN0JTIwYmVkcm9vbXxlbnwwfHx8fDE3NjM1OTQyMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist bedroom"
+    },
+    {
+      "id": "project-3",
+      "description": "Living room renovation with a feature wall and custom shelving.",
+      "imageUrl": "https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsaXZpbmclMjByb29tfGVufDB8fHx8MTc2MzU0MTUzNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "living room"
+    },
+    {
+      "id": "project-4",
+      "description": "Bespoke office furniture for a modern workspace.",
+      "imageUrl": "https://images.unsplash.com/photo-1579487785973-74d2ca7abdd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxvZmZpY2UlMjBmdXJuaXR1cmV8ZW58MHx8fHwxNzYzNTM3Mzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office furniture"
+    }
+  ]
 }
