@@ -98,8 +98,8 @@ export const blogPosts = [
         id: 'blog-post-1',
         title: '10 Things to Consider Before Your Next Home Renovation',
         slug: '10-things-to-consider-before-your-next-home-renovation',
-        date: '2024-07-20',
-        author: 'John Doe',
+        date: '2025-07-20',
+        author: 'Kabir',
         excerpt: 'Thinking about renovating? Here are 10 crucial things to consider before you start knocking down walls. Proper planning can save you time, money, and a lot of headaches.',
         imagePlaceholderId: 'blog-1'
     },
@@ -107,8 +107,8 @@ export const blogPosts = [
         id: 'blog-post-2',
         title: 'The Rise of Sustainable Building Materials',
         slug: 'the-rise-of-sustainable-building-materials',
-        date: '2024-07-15',
-        author: 'Jane Smith',
+        date: '2025-07-15',
+        author: 'Kabir',
         excerpt: 'Sustainability is more than just a buzzword. We explore the rise of eco-friendly building materials and how you can incorporate them into your next project.',
         imagePlaceholderId: 'blog-2'
     },
@@ -116,8 +116,8 @@ export const blogPosts = [
         id: 'blog-post-3',
         title: 'Custom Furniture vs. Store-Bought: What\'s the Right Choice for You?',
         slug: 'custom-furniture-vs-store-bought',
-        date: '2024-07-10',
-        author: 'John Doe',
+        date: '2025-07-10',
+        author: 'Kabir',
         excerpt: 'Can\'t decide between a custom-made piece and something off the shelf? We break down the pros and cons to help you make an informed decision for your space.',
         imagePlaceholderId: 'blog-3'
     }
@@ -199,7 +199,7 @@ export const detailedServices = [
       },
       {
         title: 'Geotechnical Engineering',
-        description: 'The company also offers geotechnical engineering services for site investigation, soil analysis, foundation design, slope stability analysis, and ground improvement techniques. Our geotechnical engineers utilize advanced testing methods and numerical modeling to assess and mitigate geotechnical risks.'
+        description: 'The company also offers geotechnical engineering services for site investigation, soil analysis, foundation design, slope stability analysis, and ground improvement techniques. Our geotechnical engineers utilize advanced testing methods and numerical modeling to assess and mitigate geotechnical risks in infrastructure projects.'
       }
     ]
   },
